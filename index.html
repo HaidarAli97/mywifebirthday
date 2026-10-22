@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#140a13">
+  <meta name="description" content="A birthday surprise made with love for Wasila Seelah.">
+  <title>For My Queen, Seelah ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Toggle background music">
+    <span class="music-icon" aria-hidden="true">♪</span>
+    <span class="music-label">Our melody</span>
+  </button>
+  <audio id="bgMusic" src="assets/chopin-nocturne.mp3" loop preload="metadata"></audio>
+
+  <div class="envelope-screen" id="envelopeScreen">
+    <div class="envelope-scene">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your birthday surprise">
+        <div class="env-back"></div>
+        <div class="env-letter">
+          <span class="env-for">For</span>
+          <strong>Seelah</strong>
+          <span class="env-heart">♥</span>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="seal">S</div>
+      </div>
+      <p class="tap-hint">Tap the seal to open</p>
+    </div>
+  </div>
+
+  <main class="page" id="page">
+    <div class="eyebrow"><span>✦</span> Made with love <span>✦</span></div>
+    <div class="crown" aria-hidden="true">♛</div>
+    <p class="intro">To my one and only</p>
+    <h1>Queen <em>Seelah</em></h1>
+    <p class="subtitle">Happy Birthday, <span>My Queen</span> ❤️</p>
+
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <div class="photo-fallback" aria-hidden="true">
+            <span class="fallback-mark">✦</span>
+            <span class="monogram">Seelah</span>
+            <span class="monogram-sub">our forever</span>
+          </div>
+          <img id="wifePhoto" src="assets/wasila.jpg" alt="My beautiful Queen, Wasila Seelah">
+        </div>
+      </div>
+      <span class="photo-heart heart-one" aria-hidden="true">♡</span>
+      <span class="photo-heart heart-two" aria-hidden="true">✦</span>
+    </div>
+
+    <div class="cake-scene" id="cakeScene">
+      <p class="wish-label" id="wishLabel">Make a wish, my love</p>
+      <button class="cake" id="cake" type="button" aria-label="Blow out the candle and make a wish">
+        <span class="candle">
+          <span class="smoke" aria-hidden="true"></span>
+          <span class="flame" id="flame" aria-hidden="true"></span>
+        </span>
+        <span class="tier tier-top" aria-hidden="true"></span>
+        <span class="tier tier-bottom" aria-hidden="true"></span>
+        <span class="plate" aria-hidden="true"></span>
+      </button>
+      <p class="wish-done" id="wishDone" aria-live="polite"></p>
+    </div>
+
+    <p class="message">Some people make the world more beautiful just by being in it.<br><strong>You are that person for me.</strong></p>
+
+    <button id="openLetter" class="button" type="button" aria-expanded="false" aria-controls="letter">
+      <span class="btn-label">A little message for you</span>
+      <span class="btn-heart" aria-hidden="true">♡</span>
+    </button>
+
+    <section id="letter" class="letter" aria-hidden="true">
+      <div class="letter-inner">
+        <div class="letter-top" aria-hidden="true">♡</div>
+        <h2>My dearest <em>Queen,</em></h2>
+        <p>Happy birthday, my beautiful Wasila.</p>
+        <p>Today, I celebrate not only the day you were born, but the blessing of having you in my life. Your smile, your heart, and the person you are mean more to me than these words can ever explain.I really appreciate the time spent with you, with your patience and tolerance.</p>
+        <p>My prayer for you is that this new year of your life brings you peace, happiness, good health, answered prayers, and beautiful opportunities. May you always feel appreciated, protected, supported, and deeply loved.</p>
+        <p>If I had to choose again, I would still choose you. Thank you for being my Queen and for giving my heart someone so special to love.</p>
+        <p>May I keep giving you reasons to smile, today and in all the days ahead.</p>
+        <p class="signoff">Happy Birthday, Seelah.<br><em>Forever yours, your King.</em> ❤️</p>
+        <div class="letter-bottom" aria-hidden="true">Today · Tomorrow · Always</div>
+      </div>
+    </section>
+
+    <p class="closing">You are loved more than you know.</p>
+    <div class="signature">— Your King <span aria-hidden="true">♥</span></div>
+  </main>
+
+  <footer>
+    <span>Created especially for Wasila Sani · Seelah</span>
+    <span class="music-credit">Music · Chopin, Nocturne in G major, Op. 37 No. 2 — Olga Gurevich (CC0)</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
